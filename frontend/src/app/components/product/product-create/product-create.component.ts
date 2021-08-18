@@ -1,4 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import {
+  Component,
+  OnInit,
+  NgModule,
+  CUSTOM_ELEMENTS_SCHEMA,
+} from "@angular/core";
 import { ProductService } from "../product.service";
 import { Router } from "@angular/router";
 import { Product } from "../product.model";
