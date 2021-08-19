@@ -1,7 +1,11 @@
 <ul>
   <li *ngFor="let product of products">
     {{ product.id }} - {{ product.name }} - {{ product.price }}
-    <a routerLink="" class="edit"> <i class="material-icons">edit</i> </a>
-    <a routerLink="" class="delete"> <i class="material-icons">delete</i> </a>
+    <a routerLink="/products/update/{{ product.id }}" class="edit">
+      <i class="material-icons">edit</i>
+    </a>
+    <a routerLink="/products/delete/{{ product.id }}" class="delete">
+      <i class="material-icons">delete</i>
+    </a>
   </li>
 </ul>
